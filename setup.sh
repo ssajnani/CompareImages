@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo pip3 install opencv-python numpy scipy matplotlib
+sudo apt install python3-opencv
+sudo pip3 install numpy scipy Pillow imageio matplotlib
 
