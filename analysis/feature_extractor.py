@@ -19,7 +19,7 @@ def extract_features(image_path, vector_size=32):
         # Using SURF because it has been demostrated as it is among the best feature detectors: 
         # https://www.researchgate.net/publication/314285930_Comparison_of_Feature_Detection_and_Matching_Approaches_SIFT_and_SURF
         alg = cv2.xfeatures2d.SURF_create(400)
-        # Dinding image keypoints
+        # Detecting image keypoints
         kps = alg.detect(image)
         # Getting first 32 of them. 
         # Number of keypoints is varies depend on image size and color pallet
@@ -46,10 +46,9 @@ def extract_features(image_path, vector_size=32):
     return dsc
 
 
-''' Feature extractor
-@param image_path string
-@param vector_size int
-@return numpy matrix of features
+''' Batch extractor
+@param images_path string
+@param pickled_db_path string
 '''
 def batch_extractor(images_path, pickled_db_path="features.pck"):
     result = {}
