@@ -12,5 +12,6 @@
 >>  * The **compare** module has a function that is used to initialize a **Matcher** object and perform a match, returning the cosine distance as a similarity value. 
 >>  * The **parse_analyze** module has a function that reads in an input csv row by row takes the two values in each row and performs a compare operation using the **compare** module, the elapsed time for comparison is recorded, the output is written in an output csv. It is important to note that the output csv is updated row by row so if the input csv is N values large, the user can expect the output to be output incrementally over time, instead of at the end of the processing. 
 >>  * This **parse_analyze** function is the called in the **main** module which acts as the command line argument parser for the program.  
-6)
+
+
 
