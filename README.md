@@ -5,18 +5,18 @@ This project was developed to allow for ease of two-image comparison from a csv 
 For example: 
 
 <br />Input CSV - 
-image1,image2 
-aa.png,ba.png 
-ab.png,bb.png 
-ac.png,bc.png 
-ad.png,bd.png
+<br />image1,image2 
+<br />aa.png,ba.png 
+<br />ab.png,bb.png 
+<br />ac.png,bc.png 
+<br />ad.png,bd.png
 
-Output CSV - 
-image1,image,similar,elapsed 
-aa.png,ba.png,0,0.006 
-ab.png,bb.png,0.23,0.843 
-ac.png,bc.png,0,1.43 
-ad.png,bd.png,1,2.32
+<br />Output CSV - 
+<br />image1,image,similar,elapsed 
+<br />aa.png,ba.png,0,0.006 
+<br />ab.png,bb.png,0.23,0.843 
+<br />ac.png,bc.png,0,1.43 
+<br />ad.png,bd.png,1,2.32
 
 ## Setup Instructions
 
