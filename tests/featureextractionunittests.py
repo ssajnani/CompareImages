@@ -14,10 +14,6 @@ class FeatureExtractionUnitTests(unittest.TestCase):
         print('Test extract_features on a invalid path')
         self.assertEqual(extract_features(invalid_path), None)
 
-    def test_batch_extractor_single_file(self):
-        valid_file_array = ["../resources/images/test.png"]
-        print('Test batch_extractor on a valid single file array')
-        self.assertTrue(os.path.exists('features.pck'))
 
 if __name__ == '__main__':
     unittest.main()
