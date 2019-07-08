@@ -1,0 +1,4 @@
+image1,image2
+./resources/images/test.png, ./resources/images/test.png
+./resources/images/test.png, ./resources/images/test2.jpg
+./resources/images/test.png, ./resources/images/test3.jpg
