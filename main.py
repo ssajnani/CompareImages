@@ -1,5 +1,16 @@
-from analysis.compare import *
+#!/bin/python3
+from parse_analyze import *
+import sys
 
-compare_two_images("./resources/images/test.png", "./resources/images/test.png")
-compare_two_images("./resources/images/test.png", "./resources/images/test3.jpg")
-compare_two_images("./resources/images/test.png", "./resources/images/test2.jpg")
+if (len(sys.argv) == 2):
+    parse_analyze_write_back(sys.argv[1])
+elif (len(sys.argv) == 3):
+    parse_analyze_write_back(sys.argv[1], sys.argv[2])
+else:
+    print("""
+    Image Comparison Program using SURF 
+        Usage:
+            `python3 main.py {input_csv_path}`
+                if no second argument is passed the output will be named output.csv                and be in the current folder
+            `python3 main.py {input_csv_path} {output_csv_name}`
+            """)
