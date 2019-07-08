@@ -17,5 +17,5 @@ def compare_two_images(first_image_path, second_image_path):
     #Match the features of the first image with the
     #features extracted from the second image
     match = ma.match(first_image_path)
-    return match[0]
+    return match
 
