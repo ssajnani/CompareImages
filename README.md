@@ -9,7 +9,7 @@
 
 SURF gathers features based on gradients:
 
-![](images/feature_extraction.png)
+![](images/feature_extraction.jpeg)
 
 5) One class and four python module files were created. 
 >>  * The most critical module was the **feature_extractor** which has a function that generates a numpy array of extracted features gathered from an image file using the SURF algorithm. 
