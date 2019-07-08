@@ -9,7 +9,7 @@ class MatcherUnitTests(unittest.TestCase):
         print('Test initialization of matcher')
         try:
             self.ma = Matcher('../resources/images/test2.jpg')
-            self.assertFalse(True)
+            self.assertTrue(True)
         except:
             self.assertTrue(False)
 
