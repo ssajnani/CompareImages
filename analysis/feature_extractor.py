@@ -44,19 +44,3 @@ def extract_features(image_path, vector_size=32):
         return None
 
     return dsc
-
-
-''' Batch extractor
-@param images_path string
-@param pickled_db_path string
-'''
-def batch_extractor(images_path, pickled_db_path="features.pck"):
-    result = {}
-    for f in images_path:
-        print('Extracting features from image %s' % f)
-        name = f.split('/')[-1].lower()
-        result[name] = extract_features(f)
-    
-    # saving all our feature vectors in pickled file
-    with open(pickled_db_path, 'wb') as fp:
-        pickle.dump(result, fp)
