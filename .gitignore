@@ -2,3 +2,4 @@ analysis/__pycache__/
 analysis/features.pck
 output.csv
 __pycache__
+.vscode/

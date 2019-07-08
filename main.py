@@ -1,4 +1,3 @@
-#!/bin/python3
 from parse_analyze import *
 import sys
 
