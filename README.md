@@ -66,6 +66,7 @@ The above design choices are summarized in the diagram below:
 * Created a CI/CD pipeline to screen pull requests with various unit tests
 * Create templates for pull requests and issues so it's easier to work with those github features
 * Add branch protection rules to prevent merging without approval from the team
+* Status checks in Pull Requests ensure that tests are passing in order for a merge
 * Create issues to follow the current features to be implemented or bugs to be tracked (once the project is bigger use JIRA boards)
 * Provide documentation and research background on how this project was implemented
 * Add comments to code for understanding, comments can be parsed because they are created as docstring
