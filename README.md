@@ -43,4 +43,17 @@ The above design choices are summarized in the diagram below:
 
 ![](images/design_diagram.png)
 
+## Project Considerations
+1) The code is unit tested and integration tested, also the Gitlab CI/CD pipeline is used to verify this.
+2) The program has a simple interface based on passing a command line argument to python. The setup is required to have python on your local machine. Both MacOS and Windows have been tested to ensure ease of usage by Bjorn.
+3) To help Ferris, the future maintainer, there are a list of things I have done to ensure he succeeeds:
+* Created a CI/CD pipeline to screen pull requests with various unit tests
+* Create templates for pull requests and issues so it's easier to work with those github features
+* Add branch protection rules to prevent merging without approval from the team
+* Create issues to follow the current features to be implemented or bugs to be tracked (once the project is bigger use JIRA boards)
+* Provide documentation and research background on how this project was implemented
+* Add comments to code for understanding, comments can be parsed because they are created as docstring
+* Tagging releases and maintaining latest release branches to keep track of changes between major product changes
+4) Each release is tagged and each tag has a branch associated with it, thus, Bjorn can get the latest version by looking at the tags.
+
 
