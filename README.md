@@ -70,6 +70,6 @@ The above design choices are summarized in the diagram below:
 * Provide documentation and research background on how this project was implemented
 * Add comments to code for understanding, comments can be parsed because they are created as docstring
 * Tagging releases and maintaining latest release branches to keep track of changes between major product changes
-4) Each release is tagged and each tag has a branch associated with it, thus, Bjorn can get the latest version by looking at the tags.
+4) Each release is tagged and each tag has a branch associated with it, thus, Bjorn can get the latest version by looking at the tags. To get versions in between release Bjorn can simply clone the production branch
 
 
