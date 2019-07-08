@@ -1,5 +1,22 @@
 # Compare Pairs of Images Project
 
+This project was developed to allow for ease of two-image comparison from a csv of pairs of image paths. The image comparison generates a similarity score that is stored in the output csv along with the time taken to gather the similarity score. The elapse time is given in seconds.
+
+For example: 
+
+Input CSV - 
+image1,image2 
+aa.png,ba.png 
+ab.png,bb.png 
+ac.png,bc.png 
+ad.png,bd.png
+
+Output CSV - 
+image1,image,similar,elapsed 
+aa.png,ba.png,0,0.006 
+ab.png,bb.png,0.23,0.843 
+ac.png,bc.png,0,1.43 
+ad.png,bd.png,1,2.32
 
 ## Setup Instructions
 
@@ -18,7 +35,6 @@
 3) Run the following in Terminal: `pip3 install numpy scipy Pillow imageio opencv-python==3.4.2.17 opencv-contrib-python==3.4.2.17`
 4) Install git (https://git-scm.com/download/mac) and clone the git repository by running the following in Terminal: `git clone git@github.com:ssajnani/CompareImages.git`
 5) To execute the image comparison, in Terminal, change directories to the root directory of this project. To get a command line description of program usage run `py main.py`. Otherwise, run the python script as follows, `python3 main.py {path_to_input_csv_file}`, the output will be in the root directory in a file called output.csv. If you would like to provide a path for the output csv file you can execute the script like this, `python3 main.py {path_to_input_csv_file} {path_to_output_csv_file}`
-
 
 ## Approach
 
