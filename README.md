@@ -4,7 +4,7 @@ This project was developed to allow for ease of two-image comparison from a csv 
 
 For example: 
 
-Input CSV - 
+<br />Input CSV - 
 image1,image2 
 aa.png,ba.png 
 ab.png,bb.png 
