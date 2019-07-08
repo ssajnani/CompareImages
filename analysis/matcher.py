@@ -50,4 +50,4 @@ class Matcher(object):
         # getting top 1 records
         nearest_ids = np.argsort(img_distances)[:topn].tolist()
 
-        return img_distances[nearest_ids].tolist()
+        return img_distances[nearest_ids].tolist()[0]
