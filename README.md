@@ -12,11 +12,15 @@ SURF gathers features based on gradients and the defining gradients of the image
 ![](images/feature_extraction.jpeg)
 
 5) One class and four python module files were created. 
->>  * The most critical module was the **feature_extractor** which has a function that generates a numpy array of extracted features gathered from an image file using the SURF algorithm. 
+>>  * The most critical module was the **feature_extractor** which has a function extract_features that generates a numpy array of extracted features gathered from an image file using the SURF algorithm. 
 >>  * The **Matcher** class can be used to instantiate an object with an image and its feature vector using the **feature_extractor** module. Once instantiated, the Matcher can then be used to perform a match operation on the object's self vector with the features of another image provided. The match operation is a comparison of cosine distance or distance between the points in the image vectors.
->>  * The **compare** module has a function that is used to initialize a **Matcher** object and perform a match, returning the cosine distance as a similarity value. 
->>  * The **parse_analyze** module has a function that reads in an input csv row by row takes the two values in each row and performs a compare operation using the **compare** module, the elapsed time for comparison is recorded, the output is written in an output csv. It is important to note that the output csv is updated row by row so if the input csv is N values large, the user can expect the output to be output incrementally over time, instead of at the end of the processing. 
+>>  * The **compare** module has a function called compare_two_images that is used to initialize a **Matcher** object with an image and perform a match against another image, returning the cosine distance as a similarity value. 
+>>  * The **parse_analyze** module has a function called parse_analyze_write_back that reads in an input csv row by row takes the two values in each row and performs a compare operation using the **compare** module, the elapsed time for comparison is recorded, the output is written in an output csv. It is important to note that the output csv is updated row by row so if the input csv is N values large, the user can expect the output to be output incrementally over time, instead of at the end of the processing. 
 >>  * This **parse_analyze** function is the called in the **main** module which acts as the command line argument parser for the program.  
+
+The above design choices are summarized in the diagram below:
+
+![](images/design_diagram.png)
 
 
 
