@@ -4,21 +4,18 @@ from analysis.matcher import Matcher
 
 def compare_two_images(first_image_path, second_image_path):
     '''
-        Compare two images by calling a batch feature extractor 
+        Compare two images using the matcher 
         followed by a image matcher
         @param first_image_path string
         @param second_image_path string
         @return match_number float
     '''
-    #Second the second image for batch feature extraction
-    files = [second_image_path]
-    
-    batch_extractor(files)
-    #After feature is extracted read the pickle file that was written
-    ma = Matcher('features.pck')
+    #Pass second image path as a parameter,
+    # Matcher initalizes the feature extraction of the second image
+    ma = Matcher(second_image_path)
     
     #Match the features of the first image with the
     #features extracted from the second image
-    names, match = ma.match(first_image_path)
+    match = ma.match(first_image_path)
     return match[0]
 
