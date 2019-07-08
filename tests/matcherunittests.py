@@ -16,7 +16,7 @@ class MatcherUnitTests(unittest.TestCase):
     def test_match(self):
         print('Test matching capabilities of matcher')
         self.ma = Matcher('../resources/images/test3.jpg')
-        match_result = self.ma.match('../resources/images/test.png')[0]
+        match_result = self.ma.match('../resources/images/test.png')
         self.assertTrue(match_result < 0.5 and match_result > 0.3)
 
 if __name__ == '__main__':
