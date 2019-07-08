@@ -9,9 +9,8 @@
 
 SURF gathers features based on gradients and the defining gradients of the image are collected as key points as described in the diagram below:
 
-<center>
-  ![](images/feature_extraction.jpeg)
-</center>
+![](images/feature_extraction.jpeg)
+
 
 5) One class and four python module files were created. 
 >>  * The most critical module was the **feature_extractor** which has a function extract_features that generates a numpy array of extracted features gathered from an image file using the SURF algorithm. 
@@ -22,7 +21,6 @@ SURF gathers features based on gradients and the defining gradients of the image
 
 The above design choices are summarized in the diagram below:
 
-<center> ![](images/design_diagram.png) </center>
-
+![](images/design_diagram.png)
 
 
