@@ -7,7 +7,7 @@
 3) Searched for feature matching image comparison using Python and found a Medium article describing a program that uses batch iamge feature extraction and compares one image to a set of images. The feature matching technique used is the KAZE feature matching algorithm. Used this as a base to begin the project and remove the batch feature extraction to compare images on a one-to-one basis. Source: https://medium.com/machine-learning-world/feature-extraction-and-similar-image-search-with-opencv-for-newbies-3c59796bf774
 4) Researched feature matching algorithms other than KAZE, and found a research paper outlining the most useful feature matching algorithms. The two most popular and effective algorithms used are Speeded Up Robust Features (SURF) and Scale-Invariant Feature Transform (SIFT), because of their invariance to scale, rotate, translation, illumination, and blur. SURF is better than SIFT in rotation invariant, blur and warp transform. SURF is 3 times faster as such a compromise of speed was made by choosing SURF as the feature extraction algorithm of choice. Source:  https://www.researchgate.net/publication/314285930_Comparison_of_Feature_Detection_and_Matching_Approaches_SIFT_and_SURF
 
-SURF gathers features based on gradients:
+SURF gathers features based on gradients and the defining gradients of the image are collected as key points as described in the diagram below:
 
 ![](images/feature_extraction.jpeg)
 
